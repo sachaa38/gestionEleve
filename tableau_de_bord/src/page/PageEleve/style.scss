@@ -1,0 +1,27 @@
+.divEleveCalendrier {
+    position: relative;
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.monBouton {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    background-color: #14296D;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    transition: 250ms ease;
+    font-weight: bold;
+   
+
+    &:hover {
+        background-color: #79A2FF;
+        color:#14296D;
+        transition: 250ms ease;
+    }
+}
