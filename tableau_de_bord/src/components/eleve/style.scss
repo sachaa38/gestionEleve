@@ -1,113 +1,109 @@
 .pageEleveContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-    .divHeaderEleve{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+.divHeaderEleve {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-    }
+.navButton {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
 
-        .navButton {
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-            
-        }
+.navButton button {
+  width: 150px;
+  height: 80px;
+  border-radius: 15px;
+  background-color: #1d36f6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  transition: 250ms ease;
+}
 
-            .navButton button {
-                width: 150px;
-                height: 80px;
-                border-radius: 15px;
-                background-color: #1D36F6;
-                color : white;
-                font-weight: bold;
-                border: none;
-                font-size: 16px;
-                transition: 250ms ease;
-            }
+.navButton button:hover {
+  background-color: #14296d;
+  cursor: pointer;
+  transition: 250ms ease;
+}
 
-            .navButton button:hover {
-                background-color: #14296D;
-                cursor: pointer;
-                transition: 250ms ease;
-            }
+.eleveName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  margin: 20px 50px;
+}
 
-        .eleveName{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 5px;
-            margin: 20px 50px;
-            
-            
-        }
+.divClasseEtPlanning {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
-        .divClasseEtPlanning {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
+.divClassesInfo {
+  font-size: 18px;
+  margin: 0 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-        }
+.eleveCoursDetail {
+  color: white;
+  background-color: #61a200;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  width: 100%;
+  &.empty {
+    background-color: red;
+  }
+}
 
-            .divClassesInfo{
-                font-size: 18px;
-                margin: 0 70px;
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-            }
+.eleveCoursDetail span {
+  color: #1d36f6;
+  font-weight: 900;
+  font-size: larger;
+}
 
-                .eleveCoursDetail{
-            
-                    color: white;
-                    background-color: #61A200;
-                    padding: 20px 50px;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                    border-radius: 15px;
-                    width: 100%;
-                }
+.coursPlanned {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 15px;
+  margin-left: 100px;
+  align-items: center;
+}
 
-                .eleveCoursDetail span {
-                    color: #1D36F6;
-                    font-weight:900;
-                    font-size: larger;
-                    
-                    
-                }
-    
-            .coursPlanned {
-                display: flex;
-                flex-direction: column;
-                font-size: 18px;
-                gap:15px;
-                margin-left: 100px;
-                align-items: center;
-                
-            }
+.coursPlanned h2 {
+  font-size: 32px;
+  margin-bottom: 28px;
+}
 
-                .coursPlanned h2 {
-                    font-size: 32px;
-                    margin-bottom: 28px;
-                    
-                }
-            
-                .divTitleAndDate {
-                    color: white;
-                    background-color: #61A200;
-                    padding: 20px 50px;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    justify-content: space-between;
-                    border-radius: 15px;
-                    width: 100%;
-                    background-color: #274CEF;
-                }
+.divTitleAndDate {
+  color: white;
+  background-color: #61a200;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #274cef;
+
+  &.completed {
+    background-color: grey;
+  }
+}

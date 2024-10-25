@@ -1,11 +1,12 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose')
 
 const courseSchema = new mongoose.Schema({
-  id: { type: Number},
-  title: { type: String},
-  start: { type: Date},
+  id: { type: Number },
+  title: { type: String },
+  start: { type: Date },
   end: { type: Date },
-});
+  completed: { type: Boolean, default: false },
+})
 
 const eleveSchema = new mongoose.Schema({
   userId: { type: String, required: true },
@@ -15,7 +16,7 @@ const eleveSchema = new mongoose.Schema({
   completedClasses: { type: Number, default: 0 },
   canceledClasses: { type: Number, default: 0 },
   scheduledClasses: { type: Number, default: 0 },
-  plannedCourses: [courseSchema],  // Ajout du tableau des cours planifiés
-});
+  plannedCourses: [courseSchema], // Ajout du tableau des cours planifiés
+})
 
-module.exports = mongoose.model('Eleve', eleveSchema);
+module.exports = mongoose.model('Eleve', eleveSchema)

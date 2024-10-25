@@ -13,6 +13,7 @@ router.post('/:id/courses', eleveCtrl.addCourse);
 router.get('/:id/courses', eleveCtrl.getCourses);
 router.put('/:id/courses/:courseId', eleveCtrl.updateCourse);
 router.delete('/:id/courses/:courseId', eleveCtrl.deleteCourse);
+router.delete('/:id/courses/:courseId?action=cancel', eleveCtrl.deleteCourse)
 
 
 
